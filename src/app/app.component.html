@@ -1,0 +1,12 @@
+<div class="container">
+    <h1 style="text-align:center">Network Graph JSON</h1>
+    <textarea #jsonString type="text" id="jsonString" placeholder="Your name.."></textarea>
+    <button id="runBtn" (click)="submitJSON(jsonString.value)">Run</button>
+</div>
+
+<svg  id="graphContainer"
+      width="100%"
+      height="100%"
+      class="associations"
+      #graphContainer>
+</svg>

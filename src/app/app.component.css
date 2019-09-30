@@ -1,0 +1,85 @@
+::ng-deep svg {
+    background-color: lightgray;
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+  }
+  
+  ::ng-deep path.link {
+    fill: none;
+    stroke: #000;
+    stroke-width: 4px;
+    cursor: default;
+  }
+  
+  ::ng-deep svg:not(.active):not(.ctrl) path.link {
+    cursor: pointer;
+  }
+  
+  ::ng-deep path.link.selected {
+    stroke-dasharray: 10,2;
+  }
+  
+  ::ng-deep path.link.dragline {
+    pointer-events: none;
+  }
+  
+  ::ng-deep path.link.hidden {
+    stroke-width: 0;
+  }
+  
+  ::ng-deep circle.node {
+    stroke-width: 1.5px;
+    /*cursor: pointer;*/
+  }
+  
+  ::ng-deep circle.node.reflexive {
+    stroke: #000 !important;
+    stroke-width: 2.5px;
+  }
+  
+  ::ng-deep text {
+    font: 12px sans-serif;
+    pointer-events: none;
+  }
+  
+  ::ng-deep text.id {
+    text-anchor: middle;
+    font-weight: bold;
+  }
+
+  
+  #jsonString {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    min-height: 150px;
+  }
+
+  #runBtn {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  #runBtn:hover {
+    background-color: #45a049;
+  }
+
+  div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
